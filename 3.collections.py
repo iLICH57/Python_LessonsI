@@ -91,7 +91,7 @@
 # {ключ_1:значение_1, ключ_2:значение_2}
 
 #  создание словаря
-my_dict = {10:3.14, "abc":[1,2,3]} 
+# my_dict = {10:3.14, "abc":[1,2,3]} 
 
 # print(my_dict)
 
@@ -99,29 +99,84 @@ my_dict = {10:3.14, "abc":[1,2,3]}
 # print(my_dict[10]
 # print(my_dict["abc"])
 
-data0 = {"name":"ILYA", "age":42, "id":123.5}
-data1 = {"name":"Vasya", "age":9, "id":12.5}
-data2 = {"name":"Lena", "age":29, "id":3.0}
+# data0 = {"name":"ILYA", "age":42, "id":123.5}
+# data1 = {"name":"Vasya", "age":9, "id":12.5}
+# data2 = {"name":"Lena", "age":29, "id":3.0}
 
-total_data = {"p0":data0, "p1":data1, "p2":data2}
+# total_data = {"p0":data0, "p1":data1, "p2":data2}
 
-# print(total_data["p2"]["age"])
+# # print(total_data["p2"]["age"])
 
-# изменение значений
-my_dict["abc"] = "hello"
+# # изменение значений
+# my_dict["abc"] = "hello"
 
-# при присвоении нового значения по несуществующему ключу
-# создается новая пара
-my_dict['A'] = 777
+# # при присвоении нового значения по несуществующему ключу
+# # создается новая пара
+# my_dict['A'] = 777
 
 
-# удаление пары (элемента)
-del my_dict[10]
+# # удаление пары (элемента)
+# del my_dict[10]
 
-# обновление данных
+# # обновление данных
 
-data0 = {"name":"ILYA", "age":42, "id":123.5}
+# data0 = {"name":"ILYA", "age":42, "id":123.5}
 
-data0.update({"age":43, "id":300})
+# data0.update({"age":43, "id":300})
 
-print(data0)
+# print(data0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  когда добавляется значение,
+#  которое уже есть во множестве,
+# а то оно не добавляется
+my_set.add(30)
+
+# удаление элемента
+my_set.remove(20)
+# my_set.remove(40)
+
+# метод удаления без ошибок
+my_set.discard(123)
+
+
+# Дано два множества
+w = {"a", "b", 'c', 'd'}
+z = {'b', 'c', 'q'}
+
+# объединение
+f = w.union(z)
+f = w | z
+
+# пересечение
+f = w.intersection(z)
+f = w & z
+
+# разность
+f = w.difference(z)
+f = z.difference(w)
+f = w.symmetric_difference(z)
+f = w - z
+
+
+#  самостоятельно поэксперентировать  с оставшимися методами
+#  рассмотреть модуль collections
+
+# print(f)
